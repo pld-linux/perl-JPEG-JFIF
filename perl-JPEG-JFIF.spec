@@ -14,6 +14,7 @@ License:	GPL
 Vendor:		Marcin Krzyzanowski
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/K/KR/KRZAK/%{pnam}-%{version}.tar.gz
+# Source0-md5:	237ddfa346d77e6e5a9f0e1631bd2b5e
 URL:		http://krzak.linux.net.pl/
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
