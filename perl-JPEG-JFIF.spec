@@ -1,14 +1,15 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	JPEG
-%define	pnam	JFIF
+%define		pdir	JPEG
+%define		pnam	JFIF
 Summary:	JPEG::JFIF module - reads Photoshop additional info from JPEG files (JFIF/JPEG)
 Summary(pl):	Modu³ JPEG::JFIF - odczytuj±cy dodatkowe informacje Photoshopa z JPEG-ów (JFIF/JPEG)
 Name:		perl-JPEG-JFIF
 Version:	0.10.0
-Release:	2
+Release:	3
 License:	GPL
 Vendor:		Marcin Krzyzanowski
 Group:		Development/Languages/Perl
@@ -48,15 +49,21 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+install example/test.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc TODO example/test.pl
-%{perl_sitelib}/%{pdir}/%{pnam}.pm
+%doc TODO
+%dir %{perl_sitelib}/JPEG
+%{perl_sitelib}/JPEG/JFIF.pm
 %{_mandir}/man3/*
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/test.pl
