@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	JPEG
 %define		pnam	JFIF
-Summary:	JPEG::JFIF module - reads Photoshop additional info from JPEG files (JFIF/JPEG)
-Summary(pl):	Modu³ JPEG::JFIF - odczytuj±cy dodatkowe informacje Photoshopa z JPEG-ów (JFIF/JPEG)
+Summary:	JPEG::JFIF Perl module - reads Photoshop additional info from JPEG files (JFIF/JPEG)
+Summary(pl):	Modu³ Perla JPEG::JFIF - odczytywanie dodatkowych informacji Photoshopa z JPEG-ów (JFIF/JPEG)
 Name:		perl-JPEG-JFIF
 Version:	0.11
 Release:	4
