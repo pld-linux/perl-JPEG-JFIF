@@ -9,14 +9,14 @@ Summary:	JPEG::JFIF module - reads Photoshop additional info from JPEG files (JF
 Summary(pl):	Modu³ JPEG::JFIF - odczytuj±cy dodatkowe informacje Photoshopa z JPEG-ów (JFIF/JPEG)
 Name:		perl-JPEG-JFIF
 Version:	0.10.0
-Release:	3
+Release:	4
 License:	GPL
 Vendor:		Marcin Krzyzanowski
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/K/KR/KRZAK/%{pnam}-%{version}.tar.gz
 URL:		http://krzak.linux.net.pl/
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,7 +43,8 @@ caption_writer.
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -62,8 +63,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc TODO
-%dir %{perl_sitelib}/JPEG
-%{perl_sitelib}/JPEG/JFIF.pm
+%dir %{perl_vendorlib}/JPEG
+%{perl_vendorlib}/JPEG/JFIF.pm
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/test.pl
