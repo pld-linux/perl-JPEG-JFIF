@@ -6,7 +6,7 @@
 %define		pdir	JPEG
 %define		pnam	JFIF
 Summary:	JPEG::JFIF Perl module - reads Photoshop additional info from JPEG files (JFIF/JPEG)
-Summary(pl):	Modu³ Perla JPEG::JFIF - odczytywanie dodatkowych informacji Photoshopa z JPEG-ów (JFIF/JPEG)
+Summary(pl.UTF-8):   ModuÅ‚ Perla JPEG::JFIF - odczytywanie dodatkowych informacji Photoshopa z JPEG-Ã³w (JFIF/JPEG)
 Name:		perl-JPEG-JFIF
 Version:	0.11
 Release:	4
@@ -30,11 +30,11 @@ byline, city, province_state, country_name,
 original_transmission_reference, headline, credit source, caption,
 caption_writer.
 
-%description -l pl
-Ten pakiet zawiera modu³ JPEG::JFIF, który potrafi odczytaæ dodatkowe
-metainformacje zapisane w standardzie JFIF w plikach JPEG. Obs³uguje
-niestandardowe rozwi±zania Adobe Photoshop do wersji 6 w³±cznie. Nazwy
-sekcji, które mo¿na podaæ funkcji getdata() to: object_name, category,
+%description -l pl.UTF-8
+Ten pakiet zawiera moduÅ‚ JPEG::JFIF, ktÃ³ry potrafi odczytaÄ‡ dodatkowe
+metainformacje zapisane w standardzie JFIF w plikach JPEG. ObsÅ‚uguje
+niestandardowe rozwiÄ…zania Adobe Photoshop do wersji 6 wÅ‚Ä…cznie. Nazwy
+sekcji, ktÃ³re moÅ¼na podaÄ‡ funkcji getdata() to: object_name, category,
 supplemental_categories, keywords, special_instructions, byline_title,
 byline, city, province_state, country_name,
 original_transmission_reference, headline, credit_source, caption,
