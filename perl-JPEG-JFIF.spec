@@ -9,7 +9,7 @@ Summary:	JPEG::JFIF Perl module - reads Photoshop additional info from JPEG file
 Summary(pl.UTF-8):	Moduł Perla JPEG::JFIF - odczytywanie dodatkowych informacji Photoshopa z JPEG-ów (JFIF/JPEG)
 Name:		perl-JPEG-JFIF
 Version:	0.11
-Release:	4
+Release:	5
 License:	GPL
 Vendor:		Marcin Krzyzanowski
 Group:		Development/Languages/Perl
